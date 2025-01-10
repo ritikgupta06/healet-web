@@ -1,0 +1,30 @@
+<section class="shop_section layout_padding">
+  <div class="container">
+    <div class="heading_container heading_center">
+      <h2>Latest Products</h2>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-3" *ngFor="let product of products">
+        <div class="box">
+          <a [routerLink]="product.link">
+            <div class="img-box">
+              <img [src]="product.image" alt="{{ product.name }}" />
+            </div>
+            <div class="detail-box">
+              <h6>{{ product.name }}</h6>
+              <h6>
+                Price <span>{{ product.price | currency }}</span>
+              </h6>
+            </div>
+            <div class="new">
+              <span>New</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="btn-box">
+      <a [routerLink]="['/shop']">View All Products</a>
+    </div>
+  </div>
+</section>

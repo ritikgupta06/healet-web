@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap");
+
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
+
+// body {
+//     font-family: 'Poppins', sans-serif;
+//     overflow-x: hidden;
+// }
+
+// /* Header/Logo Styles */
+// .healet-logo {
+//     position: fixed;
+//     top: 20px;
+//     left: 20px;
+//     z-index: 100;
+//     font-size: 24px;
+//     font-weight: bold;
+//     color: #fff;
+//     text-decoration: none;
+// }
+
+// /* Hero Section Styles */
+// .hero-section {
+//     height: 100vh;
+//     width: 100%;
+//     background-color: #000;
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     padding: 0 5%;
+// }
+
+// .hero-content {
+//     width: 50%;
+//     color: #fff;
+//     z-index: 1;
+// }
+
+// .hero-title {
+//     font-family: 'Playfair Display', serif;
+//     font-size: 4.5rem;
+//     font-weight: 700;
+//     line-height: 1.2;
+//     margin-bottom: 30px;
+// }
+
+// .hero-description {
+//     font-size: 1.1rem;
+//     line-height: 1.6;
+//     margin-bottom: 40px;
+//     opacity: 0.8;
+// }
+
+// .shop-now-btn {
+//     display: inline-block;
+//     padding: 15px 40px;
+//     background: transparent;
+//     border: 2px solid #ff6b6b;
+//     color: #ff6b6b;
+//     text-decoration: none;
+//     font-size: 1.1rem;
+//     transition: all 0.3s ease;
+//     position: relative;
+//     overflow: hidden;
+// }
+
+// .shop-now-btn:hover {
+//     background: #ff6b6b;
+//     color: #fff;
+// }
+
+// .hero-image {
+//     position: absolute;
+//     right: 0;
+//     top: 0;
+//     width: 50%;
+//     height: 100%;
+//     object-fit: cover;
+// }
+
+// /* Menu Icon Styles */
+// .menu-toggle {
+//     position: fixed;
+//     top: 20px;
+//     right: 20px;
+//     width: 50px;
+//     height: 50px;
+//     background: rgba(255, 255, 255, 0.1);
+//     backdrop-filter: blur(10px);
+//     border-radius: 50%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     cursor: pointer;
+//     z-index: 1000;
+//     transition: all 0.3s ease;
+// }
+
+// .menu-toggle:hover {
+//     background: rgba(255, 255, 255, 0.2);
+// }
+
+// /* Navigation Menu Styles */
+// .nav-menu {
+//     position: fixed;
+//     top: 0;
+//     right: -300px;
+//     width: 300px;
+//     height: 100vh;
+//     background: rgba(0, 0, 0, 0.95);
+//     padding: 80px 40px;
+//     transition: all 0.4s ease;
+//     z-index: 999;
+// }
+
+// .nav-menu.active {
+//     right: 0;
+// }
+
+// .nav-menu ul {
+//     list-style: none;
+// }
+
+// .nav-menu ul li {
+//     margin: 20px 0;
+// }
+
+// .nav-menu ul li a {
+//     color: #fff;
+//     text-decoration: none;
+//     font-size: 1.2rem;
+//     position: relative;
+//     padding: 5px 0;
+//     display: inline-block;
+// }
+
+// .nav-menu ul li a::after {
+//     content: '';
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     width: 0;
+//     height: 2px;
+//     background: #ff6b6b;
+//     transition: all 0.3s ease;
+// }
+
+// .nav-menu ul li a:hover::after {
+//     width: 100%;
+// }
+
+// /* Overlay */
+// .overlay {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background: rgba(0, 0, 0, 0.7);
+//     opacity: 0;
+//     visibility: hidden;
+//     transition: all 0.3s ease;
+//     z-index: 998;
+// }
+
+// .overlay.active {
+//     opacity: 1;
+//     visibility: visible;
+// }
+
+// /* Animations */
+// @keyframes fadeIn {
+//     from {
+//         opacity: 0;
+//         transform: translateY(20px);
+//     }
+
+//     to {
+//         opacity: 1;
+//         transform: translateY(0);
+//     }
+// }
+
+// .hero-content>* {
+//     animation: fadeIn 0.8s ease forwards;
+//     opacity: 0;
+// }
+
+// .hero-title {
+//     animation-delay: 0.3s;
+// }
+
+// .hero-description {
+//     animation-delay: 0.5s;
+// }
+
+// .shop-now-btn {
+//     animation-delay: 0.7s;
+// }
+
+// /* Responsive Design */
+// @media screen and (max-width: 1200px) {
+//     .hero-title {
+//         font-size: 3.5rem;
+//     }
+// }
+
+// @media screen and (max-width: 992px) {
+//     .hero-section {
+//         flex-direction: column;
+//         padding-top: 80px;
+//     }
+
+//     .hero-content {
+//         width: 100%;
+//         text-align: center;
+//         padding: 0 20px;
+//     }
+
+//     .hero-image {
+//         position: relative;
+//         width: 100%;
+//         height: 50vh;
+//         margin-top: 40px;
+//     }
+
+//     .hero-title {
+//         font-size: 3rem;
+//     }
+// }
+
+// @media screen and (max-width: 768px) {
+//     .hero-title {
+//         font-size: 2.5rem;
+//     }
+
+//     .hero-description {
+//         font-size: 1rem;
+//     }
+
+//     .nav-menu {
+//         width: 100%;
+//         right: -100%;
+//     }
+// }
+
+// @media screen and (max-width: 480px) {
+//     .hero-title {
+//         font-size: 2rem;
+//     }
+
+//     .shop-now-btn {
+//         padding: 12px 30px;
+//         font-size: 1rem;
+//     }
+// }
+
+// /* Additional Elements */
+// .bindi {
+//     width: 8px;
+//     height: 8px;
+//     background: #ff6b6b;
+//     border-radius: 50%;
+//     position: absolute;
+//     top: 20%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+// }
+
+// /* Jewelry Details Animation */
+// .jewelry-detail {
+//     position: absolute;
+//     width: 10px;
+//     height: 10px;
+//     background: radial-gradient(circle at center, #ffd700, transparent);
+//     border-radius: 50%;
+//     animation: sparkle 1.5s infinite;
+// }
+
+// @keyframes sparkle {
+//     0% {
+//         transform: scale(1);
+//         opacity: 1;
+//     }
+
+//     50% {
+//         transform: scale(1.5);
+//         opacity: 0.5;
+//     }
+
+//     100% {
+//         transform: scale(1);
+//         opacity: 1;
+//     }
+// }
+
+// /* Custom Scrollbar */
+// ::-webkit-scrollbar {
+//     width: 8px;
+// }
+
+// ::-webkit-scrollbar-track {
+//     background: #f1f1f1;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//     background: #888;
+//     border-radius: 4px;
+// }
+
+// ::-webkit-scrollbar-thumb:hover {
+//     background: #555;
+// }
+
+.home-container {
+  .image-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    .slider_bg_box {
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    .container {
+      position: absolute;
+      top: 40%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+
+      .content-section {
+        max-width: 800px;
+
+        .title {
+          font-size: 2.5rem;
+          font-weight: bold;
+          color: #fffefe;
+          margin-bottom: 1rem;
+          line-height: 1.2;
+
+          br {
+            display: block;
+          }
+        }
+
+        .description {
+          font-size: 1rem;
+          color: #ffffff;
+          margin-bottom: 1.5rem;
+          line-height: 1.5;
+        }
+
+        .shop-now-btn {
+          display: inline-block;
+          padding: 10px 20px;
+          margin-top: 50px;
+          background-color: #ff6347;
+          color: #fff;
+          text-transform: uppercase;
+          font-weight: bold;
+          text-decoration: none;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #e5533d;
+          }
+        }
+      }
+    }
+  }
+}

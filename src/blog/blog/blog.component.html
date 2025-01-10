@@ -1,0 +1,25 @@
+<section class="blog_section layout_padding">
+  <div class="container">
+    <div class="heading_container">
+      <h2>Latest From Blog</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-6" *ngFor="let blog of blogs">
+        <div class="box">
+          <div class="img-box">
+            <img [src]="blog.image" alt="Blog Image" />
+            <h4 class="blog_date">
+              {{ blog.date.day }} <br />
+              {{ blog.date.month }}
+            </h4>
+          </div>
+          <div class="detail-box">
+            <h5>{{ blog.title }}</h5>
+            <p>{{ blog.description }}</p>
+            <a [routerLink]="blog.link">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
