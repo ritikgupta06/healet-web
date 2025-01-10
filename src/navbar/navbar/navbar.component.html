@@ -1,9 +1,11 @@
 <header class="header_section innerpage_header">
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg custom_nav-container">
-      <a class="navbar-brand" href="index.html">
-        <span>Healet</span>
-      </a>
+      <div class="apj">
+        <a class="navbar-brand" href="index.html">
+          <span>Healet</span>
+        </a>
+      </div>
       <div class="">
         <div class="custom_menu-btn">
           <button (click)="openNav()">
@@ -13,10 +15,10 @@
           </button>
           <div id="myNav" class="overlay" [ngClass]="{ menu_width: isNavOpen }">
             <div class="overlay-content">
-              <a href="index.html" (click)="closeNav()">Home</a>
-              <a href="about.html" (click)="closeNav()">About</a>
-              <a href="shop.html" (click)="closeNav()">Shop</a>
-              <a href="blog.html" (click)="closeNav()">Blog</a>
+              <a href="index" (click)="closeNav()">Home</a>
+              <a href="about" (click)="closeNav()">About</a>
+              <a href="shop" (click)="closeNav()">Shop</a>
+              <a href="blog" (click)="closeNav()">Blog</a>
               <a href="javascript:void(0)" class="closebtn" (click)="closeNav()"
                 >&times;</a
               >

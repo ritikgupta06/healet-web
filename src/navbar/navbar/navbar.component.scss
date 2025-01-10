@@ -122,9 +122,8 @@
 
 .overlay .closebtn {
   position: absolute;
-  bottom: 320px;
-  right: 25px;
-  z-index: 999;
+  top: 20px;
+  right: 30px;
   font-size: 60px;
   color: #fff;
   cursor: pointer;
@@ -141,4 +140,18 @@
 /* Button styles when the menu is open */
 .custom_menu-btn.menu_btn-style button {
   transform: rotate(45deg);
+}
+
+// over
+
+.navbar-brand {
+  font-size: 24px;
+  color: white;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline */
+}
+.apj {
+  margin-top: 20px;
 }
